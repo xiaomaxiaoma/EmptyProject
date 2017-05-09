@@ -1,0 +1,33 @@
+//
+//  emptyproject-Prefix.pch
+//  emptyproject
+//
+//  Created by 马方会 on 2017/5/9.
+//  Copyright © 2017年 马方会. All rights reserved.
+//
+
+#ifndef emptyproject_Prefix_pch
+#define emptyproject_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifndef TARGET_IPHONE_SIMULATOR
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import"MFound.h"
+#import"HXSkinColor.h"
+#import "HZSkinColor.h"
+#import "HZStandSkinColor.h"
+#import "ThemeManager.h"
+#import <SystemConfiguration/SystemConfiguration.h>
+#import"MMUntil.h"
+#import "ComoneObject.h"
+#import "Tool.h"
+#import "SVProgressHUD.h"
+#import "DataManager.h"
+#endif /* emptyproject_Prefix_pch */
